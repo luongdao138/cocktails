@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  background-color: #f1f5f8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  width: 65%;
+}
+
+nav.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 20px;
+}
+
+section.nav-wrapper {
+  background: white;
+  box-shadow: 0 7px 5px #00000099;
+  margin-bottom: 90px;
+}
+
+.logo-wrapper img {
+  width: 185px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 3px;
+}
+
+nav li a {
+  display: block;
+  padding: 3px 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+section.searchform-wrapper {
+  width: 55%;
+  margin: auto;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.single-cotail-img img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+label {
+  display: block;
+  color: #476a2e;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+input#cocktailName {
+  width: 100%;
+  border: none;
+  background: #ddebf6;
+  outline: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #605f5f;
+}
+
+article {
+  display: grid;
+}
+
+.single-item {
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 60px;
+  border-radius: 4px;
+  background: #fff;
+  transition: all 0.3s linear;
+}
+
+.single-item:hover {
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.infor-wrapper {
+  padding: 23px;
+}
+
+h1.name {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+p.glass {
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 5px;
+}
+p.alcoholic {
+  margin-bottom: 6px;
+  color: #afafaf;
+  font-weight: 100;
+}
+h1.text-center.big-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin: 100px 0 50px 0;
+}
+
+.detail-btn {
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 6px;
+  background-color: #476a2e;
+  border-radius: 4px;
+}
+
+.detail-img-wrapper img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.detail-infor ul {
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.detail-infor ul li {
+  /* padding-right: 37px; */
+  margin: 10px 0px;
+}
+
+span.label {
+  display: inline-block;
+  padding: 3px 9px;
+  background: #d4e6a5;
+  font-weight: 700;
+  color: #476a2e;
+  border-radius: 4px;
+  margin-right: 12px;
+  /* line-height: 24px; */
+}
+
+span.value {
+  font-weight: 700;
+  margin-right: 12px;
+  /* word-spacing: 1px; */
+  font-size: 16px;
+}
+
+.detail-container button {
+  display: block;
+  margin: auto;
+  margin-top: -5px;
+}
+
+.detail-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 22px;
+}
+
+.detail-container.container {
+  margin-bottom: 80px;
+}
+
+.about-main {
+  width: 50%;
+  margin: auto;
+}
+
+h1.about-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+}
+
+p.content {
+  line-height: 31px;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+  section.searchform-wrapper {
+    width: 100%;
+  }
+  .detail-img-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .logo-wrapper img {
+    width: 130px;
+  }
+
+  nav li a {
+    font-size: 16px;
+  }
+
+  span.value,
+  span.label {
+    font-size: 14px;
+  }
+  .about-main {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  label {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  section.searchform-wrapper {
+    padding: 20px 24px;
+  }
+
+  .logo-wrapper img {
+    width: 100px;
+  }
+  p {
+    font-size: 14px;
+  }
+  nav li a {
+    font-size: 14px;
+  }
+}
